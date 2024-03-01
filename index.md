@@ -17,7 +17,7 @@
 			}
 		};
   </script>
-  <script type='text/javascript' src='../bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+  <script type='text/javascript' src='https://infallibletechiemiaw.my.site.com/ESWMessagingforInAppa1676392506026/assets/js/bootstrap.min.js'></script>
   
   <button id="launchChatButton" onclick="launchChat()">Click to contact support</button>
   

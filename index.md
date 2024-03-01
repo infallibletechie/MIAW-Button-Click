@@ -19,7 +19,9 @@
   </script>
   <script type='text/javascript' src='https://infallibletechiemiaw.my.site.com/ESWMessagingforInAppa1676392506026/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
   
-  <button id="launchChatButton" onclick="launchChat()">Click to contact support</button>
+  <button id="launchChatButton" onclick="launchChat()">
+  	Chat with our Agents!!!
+  </button>
   
   <script>
       function launchChat() {

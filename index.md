@@ -27,11 +27,17 @@
       function launchChat() {
           embeddedservice_bootstrap.utilAPI.launchChat()
               .then(() => {
-                  disableLaunchChatButton();
+	      	  console.log(
+		      'Inside Launch Chat'
+		  );
               }).catch(() => {
-                  hideLaunchChatButton();
+	      	  console.log(
+		      'Inside Launch Chat catch Block'
+		  );
               }).finally(() => {
-                  logEndUserAttemptToChat();
+	      	  console.log(
+		      'Inside Launch Chat finally Block'
+		  );
               });
       }
   </script>

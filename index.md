@@ -19,7 +19,31 @@
     </button>
 
     <script>
+        window.onload=function() {      
+        
+            console.log( 'Inside onload' );
+            let startMessaging = sessionStorage.getItem(
+                'messagingStartCheck'
+            );
+
+            if ( 
+                startMessaging &&
+                startMessaging === 'YES'
+            ) {
+
+                console.log( 'Messaging was in progress' );
+                initEmbeddedMessaging();
+                embeddedservice_bootstrap.utilAPI.launchChat();
+                
+            }
+            
+        };
         function launchChat() {
+        
+            sessionStorage.setItem(
+                'messagingStartCheck',
+                'YES'
+            );
             initEmbeddedMessaging();
             console.log("Loading Messaging now");
             setTimeout(() => {
@@ -35,6 +59,7 @@
                         console.log("Inside Launch Chat finally Block");
                     });
             }, 2000);
+            
         }
     </script>
 </html>
